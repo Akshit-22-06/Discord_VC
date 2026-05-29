@@ -75,7 +75,10 @@ async def camera_check(member_id, guild_id):
                 await member.move_to(fallback, reason='Camera not enabled after 5 minutes')
                 await send_dm(
                     member,
-                    'CAM CHECK FAILED 😂\n\nOof, you got yeeted straight into the CAMS OFF zone! Your camera decided to play hide and seek and showed up fashionably late... like, too late.\nSorry buddy, but around here it\'s simple: No Cam = No Redemption',
+                    f'WELCOME!  CHAMP {member.display_name}  to THE REDEMPTION !\n\n'
+                    'CAM CHECK FAILED 😔💔\n'
+                    'Omfoo you got yeeted straight into the CAMS OFF zone! Your camera decided to play hide and seek and showed up fashionably late... like, too late.\n\n'
+                    'Sorry buddy but around here it\'s simple: NO CAM = NO REDEMPTION! 😈',
                 )
             except Exception as exc:
                 print(f'Error moving {member}: {exc}')

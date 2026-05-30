@@ -12,10 +12,10 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 if not TOKEN:
     raise SystemExit('Missing DISCORD_TOKEN in .env')
 
-WATCH_CHANNEL_NAME = 'THE REDEMPTION !-TEST'
+WATCH_CHANNEL_NAME = 'THE REDEMPTION !'
 FALLBACK_CHANNEL_NAME = 'CAMS OFF/ SS'
 ASH_ROLE_NAME = "ASH's"
-CHECK_DELAY_SECONDS = 5
+CHECK_DELAY_SECONDS = 2*60
 
 pending_checks = {}
 warned_users = set()
